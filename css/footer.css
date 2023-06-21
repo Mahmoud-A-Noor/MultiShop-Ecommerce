@@ -1,0 +1,33 @@
+/* footer */
+
+.footer-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.footer-link i{
+    font-size: large;
+    font-weight: 700;
+}
+
+.footer-link:hover span{
+    text-decoration: underline;
+    color: #c5c5c5;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.footer-link:hover i{
+    text-decoration: none;
+}
+
+.input-group-append {
+    margin-left: -1px;
+}
+
+.footer-icon-button{
+    font-size: 1.2rem;
+    padding: 0.55em;
+}

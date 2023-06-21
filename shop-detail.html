@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- box icons -->
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/boxicons-animation.css">
+    <link rel="stylesheet" href="css/boxicons-transformations.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- my styles -->
+    <link rel="stylesheet" href="css/shop-detail.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/utils.css">
+</head>
+
+<body>
+    <a id="back-to-top" class="d-flex justify-content-center align-items-center bg-yellow text-color-grey">
+        <i class='bx bx-chevrons-up'></i>
+    </a>
+
+    <!-- navigation bar -->
+    <div id="topbar" class="container-fluid">
+        <div id="upper-nav" class="row align-items-center py-1 px-2 px-xl-5">
+          <div class="col-lg-6 d-none d-lg-block">
+            <a class="upper-nav-link" href="">About</a>
+            <a class="upper-nav-link" href="">Contact</a>
+            <a class="upper-nav-link" href="">Help</a>
+            <a class="upper-nav-link" href="">FAQs</a>
+          </div>
+    
+          <div class="col-lg-6 text-center text-lg-end">
+            <div class="d-inline-flex">
+              <button class="btn btn-sm btn-light rounded-0 dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                My Account
+              </button>
+              <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">Sign in</a></li>
+                <li><a class="dropdown-item" href="#">Sign up</a></li>
+              </ul>
+    
+              <button class="btn btn-sm btn-light rounded-0 dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                USD
+              </button>
+              <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+                <li><a class="dropdown-item" href="#">GBP</a></li>
+                <li><a class="dropdown-item" href="#">CAD</a></li>
+              </ul>
+    
+              <button class="btn btn-sm btn-light rounded-0 dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                EN
+              </button>
+              <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">FR</a></li>
+                <li><a class="dropdown-item" href="#">AR</a></li>
+                <li><a class="dropdown-item" href="#">RU</a></li>
+              </ul>
+            </div>
+            <div class="d-inline-flex d-lg-none">
+              <a href="" class="upper-nav-link d-flex align-items-center ms-2">
+                <i class='bx bxs-heart upper-nav-icon'></i>
+                <span class="upper-nav-icon-badge rounded-circle ms-1">0</span>
+              </a>
+              <a href="" class="upper-nav-link d-flex align-items-center">
+                <i class='bx bxs-cart-alt upper-nav-icon'></i>
+                <span class="upper-nav-icon-badge rounded-circle ms-1">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="mid-nav" class="row align-items-center justify-content-between py-3 px-2 px-xl-5 d-none d-lg-flex">
+          <div class="col-lg-4 d-none d-lg-flex">
+            <span class="bg-grey px-2">
+              <h1 class="text-uppercase text-color-yellow">
+                Multi
+              </h1>
+            </span>
+            <span class="bg-yellow px-2">
+              <h1 class="text-uppercase text-color-grey">
+                SHOP
+              </h1>
+            </span>
+          </div>
+          <div id="mid-nav-search" class="col-lg-4 d-none d-lg-flex">
+            <input type="text" placeholder="Search for products" class="py-2 px-3">
+            <div class="d-flex justify-content-center align-items-center px-2">
+              <i class='bx bx-search-alt-2'></i>
+            </div>
+          </div>
+          <div id="mid-nav-contact" class="col-lg-4 d-none d-lg-flex  flex-column align-items-end">
+            <p class="m-0 text-color-grey">Customer Service</p>
+            <h5 class="m-0 text-color-black">+012 345 6789</h5>
+          </div>
+        </div>
+      </div>
+    <nav id="bottom-nav" class="navbar navbar-dark navbar-expand-lg bg-body-tertiary bg-grey py-0 px-2 px-xl-5">
+        <div class="container-fluid">
+          <div class="dropdown-center py-3 px-3 bg-yellow d-none d-lg-block">
+            <button id="bottom-nav-category-dropdown"
+              class="btn btn-secondary d-flex align-items-center bg-yellow rounded-0 border-0" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class='bx bx-list-ul text-color-grey pe-2'></i>
+              <h6 class="text-color-grey pe-2">Categories</h6>
+              <i class='bx bx-chevron-down text-color-grey ps-5'></i>
+            </button>
+            <div id="bottom-nav-dresses-main-dropdown" class="dropdown-menu" aria-labelledby="mainDropdown">
+              <div class="dropdown-submenu">
+                <button class="dropdown-item dropdown-toggler d-flex align-items-center justify-content-between text-color-grey" type="button"
+                  id="nestedDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dresses<i class='bx bx-chevron-right'></i>
+                </button>
+                <div id="bottom-nav-dresses-nested-dropdown" class="dropdown-menu" aria-labelledby="nestedDropdown">
+                  <a class="dropdown-item" href="#">Men's Dresses</a>
+                  <a class="dropdown-item" href="#">Women's Dresses</a>
+                  <a class="dropdown-item" href="#">Baby's Dresses</a>
+                </div>
+              </div>
+              <a class="dropdown-item" href="#">Shirts</a>
+              <a class="dropdown-item" href="#">Jeans</a>
+              <a class="dropdown-item" href="#">Swimwear</a>
+              <a class="dropdown-item" href="#">Sleepwear</a>
+              <a class="dropdown-item" href="#">Sportswear</a>
+              <a class="dropdown-item" href="#">Jumpsuits</a>
+              <a class="dropdown-item" href="#">Blazers</a>
+              <a class="dropdown-item" href="#">Jackets</a>
+              <a class="dropdown-item" href="#">Shoes</a>
+            </div>
+          </div>
+          <div class="d-flex d-lg-none me-auto py-3">
+            <span class="bg-grey">
+              <h1 class="text-uppercase text-color-grey bg-light px-2">
+                Multi
+              </h1>
+            </span>
+            <span class="bg-yellow">
+              <h1 class="text-uppercase text-light bg-yellow px-2">
+                SHOP
+              </h1>
+            </span>
+          </div>
+          <button id="bottom-nav-navbar-toggler" class="navbar-toggler rounded-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ps-4" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="shop-detail.html">Shop Detail</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pages
+                  <i class='bx bx-chevron-down'></i>
+                </a>
+                <ul id="bottom-nav-pages-dropdown" class="dropdown-menu rounded-0 bg-yellow">
+                  <li><a class="dropdown-item" href="shopping-cart.html">Shopping Cart</a></li>
+                    <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div id="bottom-nav-icons" class="d-lg-inline-flex d-none">
+            <a href="" class="d-flex align-items-center ms-2 text-decoration-none">
+              <i class="bx bxs-heart upper-nav-icon text-color-yellow"></i>
+              <span class="upper-nav-icon-badge rounded-circle ms-1">0</span>
+            </a>
+            <a href="" class="d-flex align-items-center ms-4 text-decoration-none">
+              <i class="bx bxs-cart-alt upper-nav-icon text-color-yellow"></i>
+              <span class="upper-nav-icon-badge rounded-circle ms-1">0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- breadcrumb -->
+    <div class="container-fluid mt-4">
+        <div class="row px-2 px-xl-5">
+            <div class="col-12">
+                <nav class=" py-3 px-3 bg-white" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class=" text-decoration-none text-color-grey" href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item"><a class=" text-decoration-none text-color-grey" href="shop.html">Shop</a>
+                        </li>
+                        <li class="breadcrumb-item text-color-lightgrey" aria-current="page">Shop Detail</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- shop detail -->
+    <div class="container-fluid mt-4">
+        <div class="row px-2 px-xl-5">
+            <div class="col-lg-5">
+                <div id="shop-detail-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/product-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/product-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/product-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/product-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#shop-detail-carousel"
+                        data-bs-slide="prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#shop-detail-carousel"
+                        data-bs-slide="next">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class=" h-100 bg-white p-4">
+                    <h3 class="text-color-grey">Product Name Goes Here</h3>
+                    <div class="d-flex align-items-center text-color-yellow mt-2">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99 Reviews)</small>
+                    </div>
+                    <h3 class="text-color-grey mt-3">$150.00</h3>
+                    <p class="mt-4">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sitclita
+                        ea. Sanc ipsum et, labore clita lorem magna duo dolor no sea Nonumy</p>
+                    <div class="d-flex mt-4">
+                        <strong class="text-color-grey me-3">Sizes: </strong>
+                        <div class="d-flex align-items-center flex-wrap">
+                            <input type="radio" name="radio-size-group" id="radio1" class="custom-radio">
+                            <label class="me-4" for="radio1">XS</label>
+
+                            <input type="radio" name="radio-size-group" id="radio2" class="custom-radio">
+                            <label class="me-4" for="radio2">S</label>
+
+                            <input type="radio" name="radio-size-group" id="radio3" class="custom-radio">
+                            <label class="me-4" for="radio3">M</label>
+
+                            <input type="radio" name="radio-size-group" id="radio4" class="custom-radio">
+                            <label class="me-4" for="radio4">L</label>
+
+                            <input type="radio" name="radio-size-group" id="radio5" class="custom-radio">
+                            <label class="me-4" for="radio5">XL</label>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <strong class="text-color-grey me-3">Colors: </strong>
+                        <div class="d-flex align-items-center flex-wrap">
+                            <input type="radio" name="radio-color-group" id="radio6" class="custom-radio">
+                            <label class="me-4" for="radio6">Black</label>
+
+                            <input type="radio" name="radio-color-group" id="radio7" class="custom-radio">
+                            <label class="me-4" for="radio7">White</label>
+
+                            <input type="radio" name="radio-color-group" id="radio8" class="custom-radio">
+                            <label class="me-4" for="radio8">Red</label>
+
+                            <input type="radio" name="radio-color-group" id="radio9" class="custom-radio">
+                            <label class="me-4" for="radio9">Blue</label>
+
+                            <input type="radio" name="radio-color-group" id="radio10" class="custom-radio">
+                            <label class="me-4" for="radio10">Green</label>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="d-flex align-items-center " style="width: 130px;">
+                            <a class="text-decoration-none bg-yellow px-2 bolder large text-color-grey" href=""><i
+                                    class='bx bx-minus'></i></a>
+                            <input type="text" class="form-control bg-light rounded-0 border-0 text-center" value="1">
+                            <a class="text-decoration-none bg-yellow px-2 bolder large text-color-grey" href=""><i
+                                    class='bx bx-plus'></i></a>
+                        </div>
+                        <a class=" btn rounded-0 text-decoration-none bg-yellow text-color-grey small-medium ms-3"
+                            href=""><i class='bx bxs-cart-alt'></i> Add To Cart</a>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <strong class="text-color-grey me-3">Share on: </strong>
+                        <div class="d-flex align-items-center">
+                            <a class="text-color-grey px-2 medium-large" href="">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a class="text-color-grey px-2 medium-large" href="">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a class="text-color-grey px-2 medium-large" href="">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a class="text-color-grey px-2 medium-large" href="">
+                                <i class='bx bxl-pinterest'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- shop detail content -->
+    <div class="container-fluid px-xl-5 px-2 mt-4">
+        <div class="bg-white p-4">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link text-color-grey rounded-0 active" style="background-color: whitesmoke;"
+                        role="button" data-bs-toggle="collapse" href="#description" aria-expanded="false"
+                        aria-controls="description">Description</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-color-grey rounded-0" role="button" data-bs-toggle="collapse"
+                        href="#information" aria-expanded="false" aria-controls="information">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-color-grey rounded-0" role="button" data-bs-toggle="collapse"
+                        href="#reviews" aria-expanded="false" aria-controls="reviews">Reviews (0)</a>
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-12">
+                    <div class="collapse multi-collapse show" id="description">
+                        <div class="py-4">
+                            <h4 class="text-color-grey mb-3">Product Description</h4>
+                            <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam
+                                invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod
+                                consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum
+                                diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam
+                                sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor
+                                aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam
+                                kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.
+                            </p>
+                            <p>Dolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor
+                                consetetur sed lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita
+                                clita diam clita. Sea amet et sed ipsum lorem elitr et, amet et labore voluptua sit
+                                rebum. Ea erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="collapse multi-collapse" id="information">
+                        <div class="py-4">
+                            <h4 class="text-color-grey mb-3">Additional Information</h4>
+                            <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam
+                                invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod
+                                consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum
+                                diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam
+                                sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor
+                                aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam
+                                kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0 py-3 text-color-lightgrey">
+                                            Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 text-color-lightgrey">
+                                            Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 text-color-lightgrey">
+                                            Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 text-color-lightgrey">
+                                            Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0 py-3 text-color-lightgrey">
+                                            Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 text-color-lightgrey">
+                                            Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 text-color-lightgrey">
+                                            Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                        </li>
+                                        <li class="list-group-item px-0 py-3 text-color-lightgrey">
+                                            Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="collapse multi-collapse" id="reviews">
+                    <div class="py-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="text-color-grey mb-3">1 review for "Product Name"</h4>
+                                <div class="d-flex">
+                                    <img src="images/user.jpg" alt="Image" class="me-3 mt-1"
+                                        style="width: 45px; height: 45px;">
+                                    <div>
+                                        <h6 class="text-color-grey">John Doe<small class="text-color-lightgrey"> - <i>01
+                                                    Jan 2045</i></small></h6>
+                                        <div class="d-flex align-items-center text-color-yellow mb-2 medium-large">
+                                            <i class='bx bxs-star me-1'></i>
+                                            <i class='bx bxs-star me-1'></i>
+                                            <i class='bx bxs-star me-1'></i>
+                                            <i class='bx bxs-star me-1'></i>
+                                            <i class='bx bxs-star me-1'></i>
+                                        </div>
+                                        <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum
+                                            et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="text-color-grey mb-3">Leave A Review</h4>
+                                <small class="small">Your email address will not be published. Required fields are
+                                    marked *</small>
+                                <div class="d-flex mt-3">
+                                    <p class="mb-0 me-2">Your Rating * :</p>
+                                    <div class="d-flex align-items-center text-color-yellow mb-2 medium-large">
+                                        <i class='bx bx-star me-1'></i>
+                                        <i class='bx bx-star me-1'></i>
+                                        <i class='bx bx-star me-1'></i>
+                                        <i class='bx bx-star me-1'></i>
+                                        <i class='bx bx-star me-1'></i>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label class="mb-2" for="message">Your Review *</label>
+                                    <textarea id="message" cols="30" rows="5" class="form-control rounded-0"></textarea>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label class="mb-2" for="name">Your Name *</label>
+                                    <input type="text" class="form-control rounded-0" id="name">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label class="mb-2" for="email">Your Email *</label>
+                                    <input type="email" class="form-control rounded-0" id="email">
+                                </div>
+                                <div class="form-group mb-0 mt-3">
+                                    <input type="submit" value="Leave Your Review"
+                                        class="border-0 rounded-0 bg-yellow text-color-grey px-3 py-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- products -->
+    <div class="container-fluid px-2 px-xl-5 pt-5 pb-3">
+        <h2 class="text-uppercase text-color-grey mb-4 position-relative">
+            <span class="pe-3 bg-whitesmoke">You May Also Like</span>
+            <span class="dotted-separator"></span>
+        </h2>
+        <div class="owl-carousel">
+            <div class="featured-product-item item">
+                <div class="overflow-hidden position-relative">
+                    <img class="img-fluid w-100" src="images/product-1.jpg" alt="">
+                    <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4 bg-white">
+                    <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-product-item item">
+                <div class="overflow-hidden position-relative">
+                    <img class="img-fluid w-100" src="images/product-2.jpg" alt="">
+                    <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4 bg-white">
+                    <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-product-item item">
+                <div class="overflow-hidden position-relative">
+                    <img class="img-fluid w-100" src="images/product-3.jpg" alt="">
+                    <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4 bg-white">
+                    <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-product-item item">
+                <div class="overflow-hidden position-relative">
+                    <img class="img-fluid w-100" src="images/product-4.jpg" alt="">
+                    <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4 bg-white">
+                    <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-product-item item">
+                <div class="overflow-hidden position-relative">
+                    <img class="img-fluid w-100" src="images/product-5.jpg" alt="">
+                    <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4 bg-white">
+                    <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-product-item item">
+                <div class="overflow-hidden position-relative">
+                    <img class="img-fluid w-100" src="images/product-6.jpg" alt="">
+                    <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4 bg-white">
+                    <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-product-item item">
+                <div class="overflow-hidden position-relative">
+                    <img class="img-fluid w-100" src="images/product-7.jpg" alt="">
+                    <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4 bg-white">
+                    <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-product-item item">
+                <div class="overflow-hidden position-relative">
+                    <img class="img-fluid w-100" src="images/product-8.jpg" alt="">
+                    <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4 bg-white">
+                    <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <i class='bx bxs-star me-1'></i>
+                        <small class="text-body-secondary small">(99)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid mt-5 pt-5 bg-grey">
+        <div class="row px-2 px-xl-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-light mb-5 pe-3 pe-xl-5">
+                <h5 class="text-uppercase text-light mb-4">Get In Touch</h5>
+                <p class=" mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor.
+                    Rebum tempor no vero est magna amet no</p>
+                <p class="mb-2"><i class='bx bxs-map text-color-yellow me-2'></i> 123 Street, New York, USA</p>
+                <p class="mb-2"><i class='bx bxs-envelope text-color-yellow me-2'></i> info@example.com</p>
+                <p class="mb-0"><i class='bx bxs-phone text-color-yellow me-2'></i> +012 345 67890</p>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5 class="text-uppercase text-light mb-4">Quick Shop</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Home</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Our Shop</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Shop Detail</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Shopping Cart</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Checkout</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Contact Us</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-uppercase text-light mb-4">My Account</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Home</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Our Shop</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Shop Detail</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Shopping Cart</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Checkout</span>
+                            </a>
+                            <a class="footer-link d-flex align-items-center mb-2" href="">
+                                <i class='bx bx-chevron-right me-1'></i> <span>Contact Us</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-uppercase text-light mb-4">NewsLetter</h5>
+                        <p class=" mb-4 text-light">Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                        <div class="d-flex flex-column justify-content-start">
+                            <div class="input-group mb-4">
+                                <input class="form-control rounded-0" type="text" placeholder="Your Email Address">
+                                <div class="input-group-append">
+                                    <button class="btn bg-yellow rounded-0">Sign Up</button>
+                                </div>
+                            </div>
+                            <h6 class="text-uppercase text-light mb-3">Follow Us</h6>
+                            <div class="d-flex justify-content-start">
+                                <a class="footer-icon-button d-flex justify-content-center align-items-center text-decoration-none me-2 bg-yellow text-color-grey"
+                                    href=""><i class='bx bxl-twitter'></i></a>
+                                <a class="footer-icon-button d-flex justify-content-center align-items-center text-decoration-none me-2 bg-yellow text-color-grey"
+                                    href=""><i class='bx bxl-facebook'></i></a>
+                                <a class="footer-icon-button d-flex justify-content-center align-items-center text-decoration-none me-2 bg-yellow text-color-grey"
+                                    href=""><i class='bx bxl-linkedin'></i></a>
+                                <a class="footer-icon-button d-flex justify-content-center align-items-center text-decoration-none me-2 bg-yellow text-color-grey"
+                                    href=""><i class='bx bxl-instagram'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="col-md-6 text-center text-md-start text-light ps-0">
+                © <a class="text-decoration-none text-color-yellow" href="">Domain</a>. All Rights Reserved. Designed by
+                <a class="text-decoration-none text-color-yellow" href="">HTML Codex</a>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <img class="img-fluid" style="max-width: min-content;" src="images/payments.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/popper.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- my scripts -->
+    <script src="js/shop-detail.js"></script>
+</body>
+
+</html>

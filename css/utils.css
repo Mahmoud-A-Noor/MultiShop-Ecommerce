@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    color: #6C757D;
+    background-color: #F5F5F5;
+}
+
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    outline: none;
+    border: none;    
+    vertical-align: middle;
+    position: relative;
+    top: -1px; /* Adjust the vertical position as needed */
+  }
+
+  .custom-checkbox + label {
+    display: inline-flex; /* Use flexbox to align the radio button and label */
+    align-items: center;
+  }
+  
+  .custom-checkbox + label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #6c757d;
+    border-radius: 0;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .custom-checkbox:checked + label:before {
+    background-color: #FFD333;
+    content: "\2713"; /* Unicode checkmark character */
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bolder;
+    border: none;
+  }
+
+
+  
+.custom-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    top: -1px; /* Adjust the vertical position as needed */
+  }
+  
+  .custom-radio + label {
+    display: inline-flex; /* Use flexbox to align the radio button and label */
+    align-items: center;
+  }
+  
+  .custom-radio + label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #6c757d;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .custom-radio:checked + label:before {
+    background-color: #FFD333;
+    content: "\25CF";
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bolder;
+    border: none;
+  }
+
+
+.bg-grey{
+    background-color: #3D464D !important;
+}
+
+.bg-yellow{
+    background-color: #FFD333 !important;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-whitesmoke{
+    background-color: whitesmoke;
+}
+
+.bg-semi-whitesmoke{
+    background-color: #F5F5F5;
+}
+
+
+.text-color-yellow, .active{
+    color: #FFD333 !important;
+}
+
+.text-color-lightgrey{
+    color: #6c757d;
+}
+
+.text-color-grey{
+    color: #3D464D !important;
+}
+
+.text-color-black{
+    color: black !important;
+}
+
+.small{
+    font-size: 0.75rem;
+}
+
+.small-medium{
+    font-size: 1rem;
+}
+
+.medium{
+    font-size: 1.1rem;
+}
+
+.medium-large{
+    font-size: 1.25rem;
+}
+
+.large{
+    font-size: 1.5rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
+.normal{
+    font-weight: 400;
+}
+
+.dotted-separator{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed #bec5cb;
+    z-index: -1;
+}
+
+
+#bottom-nav-pages-dropdown .dropdown-item{
+    color: black;
+}
+
+
+#bottom-nav-pages-dropdown .dropdown-item:hover{
+    background-color: whitesmoke;
+}

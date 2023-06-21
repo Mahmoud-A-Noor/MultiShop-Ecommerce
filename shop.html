@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- box icons -->
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/boxicons-animation.css">
+    <link rel="stylesheet" href="css/boxicons-transformations.css">
+    <!-- my styles -->
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/utils.css">
+</head>
+<body>
+    <a id="back-to-top" class="d-flex justify-content-center align-items-center bg-yellow text-color-grey">
+        <i class='bx bx-chevrons-up'></i>
+    </a>
+    
+    <!-- navigation bar -->
+    <div id="topbar" class="container-fluid">
+    <div id="upper-nav" class="row align-items-center py-1 px-2 px-xl-5">
+        <div class="col-lg-6 d-none d-lg-block">
+        <a class="upper-nav-link" href="">About</a>
+        <a class="upper-nav-link" href="">Contact</a>
+        <a class="upper-nav-link" href="">Help</a>
+        <a class="upper-nav-link" href="">FAQs</a>
+        </div>
+
+        <div class="col-lg-6 text-center text-lg-end">
+        <div class="d-inline-flex">
+            <button class="btn btn-sm btn-light rounded-0 dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            My Account
+            </button>
+            <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">Sign in</a></li>
+                <li><a class="dropdown-item" href="#">Sign up</a></li>
+            </ul>
+
+            <button class="btn btn-sm btn-light rounded-0 dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            USD
+            </button>
+            <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+                <li><a class="dropdown-item" href="#">GBP</a></li>
+                <li><a class="dropdown-item" href="#">CAD</a></li>
+            </ul>
+
+            <button class="btn btn-sm btn-light rounded-0 dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            EN
+            </button>
+            <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">FR</a></li>
+                <li><a class="dropdown-item" href="#">AR</a></li>
+                <li><a class="dropdown-item" href="#">RU</a></li>
+            </ul>
+        </div>
+        <div class="d-inline-flex d-lg-none">
+            <a href="" class="upper-nav-link d-flex align-items-center ms-2">
+            <i class='bx bxs-heart upper-nav-icon'></i>
+            <span class="upper-nav-icon-badge rounded-circle ms-1">0</span>
+            </a>
+            <a href="" class="upper-nav-link d-flex align-items-center">
+            <i class='bx bxs-cart-alt upper-nav-icon'></i>
+            <span class="upper-nav-icon-badge rounded-circle ms-1">0</span>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div id="mid-nav" class="row align-items-center justify-content-between py-3 px-2 px-xl-5 d-none d-lg-flex">
+        <div class="col-lg-4 d-none d-lg-flex">
+        <span class="bg-grey px-2">
+            <h1 class="text-uppercase text-color-yellow">
+            Multi
+            </h1>
+        </span>
+        <span class="bg-yellow px-2">
+            <h1 class="text-uppercase text-color-grey">
+            SHOP
+            </h1>
+        </span>
+        </div>
+        <div id="mid-nav-search" class="col-lg-4 d-none d-lg-flex">
+        <input type="text" placeholder="Search for products" class="py-2 px-3">
+        <div class="d-flex justify-content-center align-items-center px-2">
+            <i class='bx bx-search-alt-2'></i>
+        </div>
+        </div>
+        <div id="mid-nav-contact" class="col-lg-4 d-none d-lg-flex  flex-column align-items-end">
+        <p class="m-0 text-color-grey">Customer Service</p>
+        <h5 class="m-0 text-color-black">+012 345 6789</h5>
+        </div>
+    </div>
+    </div>
+    <nav id="bottom-nav" class="navbar navbar-dark navbar-expand-lg bg-body-tertiary bg-grey py-0 px-2 px-xl-5">
+    <div class="container-fluid">
+        <div class="dropdown-center py-3 px-3 bg-yellow d-none d-lg-block">
+        <button id="bottom-nav-category-dropdown"
+            class="btn btn-secondary d-flex align-items-center bg-yellow rounded-0 border-0" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class='bx bx-list-ul text-color-grey pe-2'></i>
+            <h6 class="text-color-grey pe-2">Categories</h6>
+            <i class='bx bx-chevron-down text-color-grey ps-5'></i>
+        </button>
+        <div id="bottom-nav-dresses-main-dropdown" class="dropdown-menu" aria-labelledby="mainDropdown">
+            <div class="dropdown-submenu">
+            <button class="dropdown-item dropdown-toggler d-flex align-items-center justify-content-between text-color-grey" type="button"
+                id="nestedDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dresses<i class='bx bx-chevron-right'></i>
+            </button>
+            <div id="bottom-nav-dresses-nested-dropdown" class="dropdown-menu" aria-labelledby="nestedDropdown">
+                <a class="dropdown-item" href="#">Men's Dresses</a>
+                <a class="dropdown-item" href="#">Women's Dresses</a>
+                <a class="dropdown-item" href="#">Baby's Dresses</a>
+            </div>
+            </div>
+            <a class="dropdown-item" href="#">Shirts</a>
+            <a class="dropdown-item" href="#">Jeans</a>
+            <a class="dropdown-item" href="#">Swimwear</a>
+            <a class="dropdown-item" href="#">Sleepwear</a>
+            <a class="dropdown-item" href="#">Sportswear</a>
+            <a class="dropdown-item" href="#">Jumpsuits</a>
+            <a class="dropdown-item" href="#">Blazers</a>
+            <a class="dropdown-item" href="#">Jackets</a>
+            <a class="dropdown-item" href="#">Shoes</a>
+        </div>
+        </div>
+        <div class="d-flex d-lg-none me-auto py-3">
+        <span class="bg-grey">
+            <h1 class="text-uppercase text-color-grey bg-light px-2">
+            Multi
+            </h1>
+        </span>
+        <span class="bg-yellow">
+            <h1 class="text-uppercase text-light bg-yellow px-2">
+            SHOP
+            </h1>
+        </span>
+        </div>
+        <button id="bottom-nav-navbar-toggler" class="navbar-toggler rounded-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ps-4" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="shop-detail.html">Shop Detail</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pages
+                <i class='bx bx-chevron-down'></i>
+            </a>
+            <ul id="bottom-nav-pages-dropdown" class="dropdown-menu rounded-0 bg-yellow">
+                <li><a class="dropdown-item" href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+        </ul>
+        </div>
+        <div id="bottom-nav-icons" class="d-lg-inline-flex d-none">
+        <a href="" class="d-flex align-items-center ms-2 text-decoration-none">
+            <i class="bx bxs-heart upper-nav-icon text-color-yellow"></i>
+            <span class="upper-nav-icon-badge rounded-circle ms-1">0</span>
+        </a>
+        <a href="" class="d-flex align-items-center ms-4 text-decoration-none">
+            <i class="bx bxs-cart-alt upper-nav-icon text-color-yellow"></i>
+            <span class="upper-nav-icon-badge rounded-circle ms-1">0</span>
+        </a>
+        </div>
+    </div>
+    </nav>
+
+    <!-- breadcrumb -->
+    <div class="container-fluid mt-4">
+        <div class="row px-2 px-xl-5">
+            <div class="col-12">
+                <nav class=" py-3 px-3 bg-white" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a class=" text-decoration-none text-color-grey" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class=" text-decoration-none text-color-grey" href="shop.html">Shop</a></li>
+                        <li class="breadcrumb-item text-color-lightgrey" aria-current="page">Shop List</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="container-fluid mt-4">
+        <div class="row px-2 px-xl-5">
+            <div class="col-lg-3 col-md-4">
+                <div class="mt-1">
+                    <h5 class="text-uppercase text-color-grey mb-3 position-relative">
+                        <span class="pe-3 bg-whitesmoke">Filter By Price</span>
+                        <span class="dotted-separator"></span>
+                    </h5>
+                    <div class="bg-white p-4 mb-3">
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="all-prices">
+                                <label for="all-prices" class="text-color-lightgrey">All Prices</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">1000</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="0-100">
+                                <label for="0-100" class="text-color-lightgrey">$0 - $100</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">150</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="100-200">
+                                <label for="100-200" class="text-color-lightgrey">$100 - $200</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">295</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="200-300">
+                                <label for="200-300" class="text-color-lightgrey">$200 - $300</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">246</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="300-400">
+                                <label for="300-400" class="text-color-lightgrey">$300 - $400</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">145</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="400-500">
+                                <label for="400-500" class="text-color-lightgrey">$400 - $500</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">168</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h5 class="text-uppercase text-color-grey mb-3 position-relative">
+                        <span class="pe-3 bg-whitesmoke">Filter By Color</span>
+                        <span class="dotted-separator"></span>
+                    </h5>
+                    <div class="bg-white p-4 mb-3">
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="all-colors">
+                                <label for="all-colors" class="text-color-lightgrey">All Colors</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">1000</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="black">
+                                <label for="black" class="text-color-lightgrey">Black</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">150</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="white">
+                                <label for="white" class="text-color-lightgrey">White</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">295</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="red">
+                                <label for="red" class="text-color-lightgrey">Red</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">246</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="blue">
+                                <label for="blue" class="text-color-lightgrey">Blue</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">145</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="green">
+                                <label for="green" class="text-color-lightgrey">Green</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">168</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h5 class="text-uppercase text-color-grey mb-3 position-relative">
+                        <span class="pe-3 bg-whitesmoke">Filter By Size</span>
+                        <span class="dotted-separator"></span>
+                    </h5>
+                    <div class="bg-white p-4 mb-3">
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="all-sizes">
+                                <label for="all-sizes" class="text-color-lightgrey">All Sizes</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">1000</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="xs">
+                                <label for="xs" class="text-color-lightgrey">XS</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">150</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="s">
+                                <label for="s" class="text-color-lightgrey">S</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">295</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="m">
+                                <label for="m" class="text-color-lightgrey">M</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">246</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="l">
+                                <label for="l" class="text-color-lightgrey">L</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">145</span>
+                        </div>
+                        <div class="shop-sidebar-content d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <input class="custom-checkbox" type="checkbox" id="xl">
+                                <label for="xl" class="text-color-lightgrey">XL</label>
+                            </div>
+                            <span class="small text-color-lightgrey border px-1">168</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="d-flex justify-content-center align-items-center p-2 me-2 bg-white text-decoration-none text-color-black medium">
+                                    <i class='bx bxs-category'></i>
+                                </a>
+                                <a class="d-flex justify-content-center align-items-center p-2 me-2 bg-white text-decoration-none text-color-black medium">
+                                    <i class='bx bx-list-ul'></i>
+                                </a>
+                            </div>
+                            <div>
+                                <button class="btn btn-sm btn-light rounded-0 dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sorting
+                                </button>
+                                <ul class="dropdown-menu rounded-0">
+                                    <li><a class="dropdown-item" href="#">Latest</a></li>
+                                    <li><a class="dropdown-item" href="#">Popularity</a></li>
+                                    <li><a class="dropdown-item" href="#">Best Rating</a></li>
+                                </ul>
+
+                                <button class="btn btn-sm btn-light rounded-0 dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Showing
+                                </button>
+                                <ul class="dropdown-menu rounded-0">
+                                    <li><a class="dropdown-item" href="#">10</a></li>
+                                    <li><a class="dropdown-item" href="#">20</a></li>
+                                    <li><a class="dropdown-item" href="#">30</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="overflow-hidden position-relative">
+                          <img class="img-fluid w-100" src="images/product-1.jpg" alt="">
+                          <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                            <a href=""><i class='bx bxs-cart-alt'></i></a>
+                            <a href=""><i class='bx bx-heart'></i></a>
+                            <a href=""><i class='bx bx-sync'></i></a>
+                            <a href=""><i class='bx bx-search'></i></a>
+                          </div>
+                        </div>
+                        <div class="text-center py-4 bg-white">
+                          <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                          <div class="d-flex justify-content-center align-items-center mt-2">
+                            <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                            <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                            <i class='bx bxs-star me-1' ></i>
+                            <i class='bx bxs-star me-1' ></i>
+                            <i class='bx bxs-star me-1' ></i>
+                            <i class='bx bxs-star me-1' ></i>
+                            <i class='bx bxs-star me-1' ></i>
+                            <small class="text-body-secondary small">(99)</small>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="overflow-hidden position-relative">
+                        <img class="img-fluid w-100" src="images/product-2.jpg" alt="">
+                        <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4 bg-white">
+                        <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <small class="text-body-secondary small">(99)</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="overflow-hidden position-relative">
+                        <img class="img-fluid w-100" src="images/product-3.jpg" alt="">
+                        <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4 bg-white">
+                        <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <small class="text-body-secondary small">(99)</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="overflow-hidden position-relative">
+                        <img class="img-fluid w-100" src="images/product-4.jpg" alt="">
+                        <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4 bg-white">
+                        <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <small class="text-body-secondary small">(99)</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="overflow-hidden position-relative">
+                        <img class="img-fluid w-100" src="images/product-5.jpg" alt="">
+                        <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4 bg-white">
+                        <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <small class="text-body-secondary small">(99)</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="overflow-hidden position-relative">
+                        <img class="img-fluid w-100" src="images/product-6.jpg" alt="">
+                        <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4 bg-white">
+                        <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <small class="text-body-secondary small">(99)</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="overflow-hidden position-relative">
+                        <img class="img-fluid w-100" src="images/product-7.jpg" alt="">
+                        <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4 bg-white">
+                        <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <small class="text-body-secondary small">(99)</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="overflow-hidden position-relative">
+                        <img class="img-fluid w-100" src="images/product-8.jpg" alt="">
+                        <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4 bg-white">
+                        <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <small class="text-body-secondary small">(99)</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="featured-product-item col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="overflow-hidden position-relative">
+                        <img class="img-fluid w-100" src="images/product-9.jpg" alt="">
+                        <div class="featured-product-actions d-flex justify-content-center align-items-center">
+                        <a href=""><i class='bx bxs-cart-alt'></i></a>
+                        <a href=""><i class='bx bx-heart'></i></a>
+                        <a href=""><i class='bx bx-sync'></i></a>
+                        <a href=""><i class='bx bx-search'></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4 bg-white">
+                        <a class="text-decoration-none text-color-grey h6" href="">Product Name Goes Here</a>
+                        <div class="d-flex justify-content-center align-items-center mt-2">
+                        <h5 class="text-body-secondary text-color-grey">$123.00</h5>
+                        <h6 class="ps-2 text-decoration-line-through text-color-lightgrey">$123.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-color-yellow">
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <i class='bx bxs-star me-1' ></i>
+                        <small class="text-body-secondary small">(99)</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <ul class="pagination bg-white">
+                            <li><a class="text-color-lightgrey" href="">Previous</a></li>
+                            <li class="bg-yellow"><a class="text-light" href="">1</a></li>
+                            <li><a class="text-color-yellow" href="">2</a></li>
+                            <li><a class="text-color-yellow" href="">3</a></li>
+                            <li><a class="text-color-yellow" href="">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid mt-5 pt-5 bg-grey">
+        <div class="row px-2 px-xl-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 text-light mb-5 pe-3 pe-xl-5">
+            <h5 class="text-uppercase text-light mb-4">Get In Touch</h5>
+            <p class=" mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum tempor no vero est magna amet no</p>
+            <p class="mb-2"><i class='bx bxs-map text-color-yellow me-2'></i> 123 Street, New York, USA</p>
+            <p class="mb-2"><i class='bx bxs-envelope text-color-yellow me-2'></i> info@example.com</p>
+            <p class="mb-0"><i class='bx bxs-phone text-color-yellow me-2' ></i> +012 345 67890</p>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+            <div class="row">
+            <div class="col-lg-4">
+                <h5 class="text-uppercase text-light mb-4">Quick Shop</h5>
+                <div class="d-flex flex-column justify-content-start">
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Home</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Our Shop</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Shop Detail</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Shopping Cart</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Checkout</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Contact Us</span>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="text-uppercase text-light mb-4">My Account</h5>
+                <div class="d-flex flex-column justify-content-start">
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Home</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Our Shop</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Shop Detail</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Shopping Cart</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Checkout</span>
+                </a>
+                <a class="footer-link d-flex align-items-center mb-2" href="">
+                    <i class='bx bx-chevron-right me-1'></i> <span>Contact Us</span>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="text-uppercase text-light mb-4">NewsLetter</h5>
+                <p class=" mb-4 text-light">Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                <div class="d-flex flex-column justify-content-start">
+                <div class="input-group mb-4">
+                    <input class="form-control rounded-0" type="text" placeholder="Your Email Address">
+                    <div class="input-group-append">
+                    <button class="btn bg-yellow rounded-0">Sign Up</button>
+                    </div>
+                </div>
+                <h6 class="text-uppercase text-light mb-3">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="footer-icon-button d-flex justify-content-center align-items-center text-decoration-none me-2 bg-yellow text-color-grey" href=""><i class='bx bxl-twitter'></i></a>
+                    <a class="footer-icon-button d-flex justify-content-center align-items-center text-decoration-none me-2 bg-yellow text-color-grey" href=""><i class='bx bxl-facebook'></i></a>
+                    <a class="footer-icon-button d-flex justify-content-center align-items-center text-decoration-none me-2 bg-yellow text-color-grey" href=""><i class='bx bxl-linkedin'></i></a>
+                    <a class="footer-icon-button d-flex justify-content-center align-items-center text-decoration-none me-2 bg-yellow text-color-grey" href=""><i class='bx bxl-instagram'></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="col-md-6 text-center text-md-start text-light ps-0" >
+            © <a class="text-decoration-none text-color-yellow" href="">Domain</a>. All Rights Reserved. Designed by <a class="text-decoration-none text-color-yellow" href="">HTML Codex</a>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+            <img class="img-fluid" style="max-width: min-content;" src="images/payments.png">
+        </div>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="js/popper.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- my scripts -->
+    <script src="js/shop.js"></script>
+</body>
+</html>
